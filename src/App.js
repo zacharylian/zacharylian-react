@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
+import HideOnScroll from './components/Navbar';
 
 function App() {
   const title = "Welcome!";
@@ -8,12 +8,11 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <h1>{ title }</h1>
-
+      
       <Routes>
-        <Route path="/" element={<Navbar/>} />
+        <Route path="/" element={<HideOnScroll/>} />
       </Routes>
+      <h1>{ title }</h1>
       
     </div>
   );
