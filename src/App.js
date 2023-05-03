@@ -1,8 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/navbar';
-import Notes from './pages/notes';
-import Create from './pages/create';
+import Navbar from './components/Navbar';
 
 function App() {
   const title = "Welcome!";
@@ -13,16 +11,9 @@ function App() {
       <Navbar />
       <h1>{ title }</h1>
 
-      <Router>
-        <Routes>
-          <Route exact path="/">
-            <Notes /> 
-          </Route>
-          <Route path="/create">
-            <Create />
-          </Route>
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Navbar/>} />
+      </Routes>
       
     </div>
   );

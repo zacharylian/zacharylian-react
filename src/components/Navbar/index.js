@@ -1,3 +1,6 @@
+import './index.scss';
+
+
 const Navbar = () => {
     return ( 
         <nav className="navbar">

@@ -1,3 +1,13 @@
+# Zachary Lian Personal Portfolio
+
+## Learning
+### Objectives:
+* Learn the fundamentals of Reactjs and integrate with MaterialUI
+* Learn the fundamentals of Java and integrate with NLP
+* Merge both frontend and backend to create one seamless web application
+* Deploy the web application on Netlify
+* (Optional) Learn the fundamentals of git commands
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
