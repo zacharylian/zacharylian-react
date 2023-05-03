@@ -63,7 +63,7 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar position="static">
+        <AppBar color="transparent" position="static">
           <Toolbar disableGutters>
             <Container>
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -92,6 +92,7 @@ export default function HideAppBar(props) {
                     open={Boolean(anchorElNav)}
                     onClose={handleCloseNavMenu}
                     sx={{
+                        flexGrow: 1,
                         display: { xs: 'block', md: 'none' },
                     }}
                     >
@@ -103,30 +104,12 @@ export default function HideAppBar(props) {
                     </Menu>
                 </Box>
                 <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-                <Typography
-                    variant="h5"
-                    noWrap
-                    component="a"
-                    href=""
-                    sx={{
-                    mr: 2,
-                    display: { xs: 'flex', md: 'none' },
-                    flexGrow: 1,
-                    fontFamily: 'monospace',
-                    fontWeight: 700,
-                    letterSpacing: '.3rem',
-                    color: 'inherit',
-                    textDecoration: 'none',
-                    }}
-                >
-                    LOGO
-                </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                     {pages.map((page) => (
                     <Button
                         key={page}
                         onClick={handleCloseNavMenu}
-                        sx={{ my: 2, color: 'white', display: 'block' }}
+                        sx={{ my: 2, color: 'black', display: 'block' }}
                     >
                         {page}
                     </Button>
