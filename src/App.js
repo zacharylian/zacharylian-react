@@ -2,20 +2,22 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Socials from './components/Sidebar';
+import Home from './pages/home';
+import About from './pages/about';
+import Projects from './pages/projects';
+import Contact from './pages/contact';
 
 function App() {
-  const title = "Welcome to my page!";
-  // cannot output objects and boolean
-
   return (
     <div className="App">
       <Socials />
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Navbar/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<Projects />} />
+        <Route path="/" element={<Contact />} />
       </Routes>
-      <h1>{ title }</h1>
-      <p>good morning</p>
-      
     </div>
   );
 }

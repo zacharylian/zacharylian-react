@@ -12,6 +12,8 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 
+import { Link } from "react-router-dom";
+
 const pages = ['Home', 'About', 'Projects', 'Contact'];
 
   function HideOnScroll(props) {
@@ -74,9 +76,13 @@ export default function Navbar(props) {
                     }}
                     >
                     {pages.map((page) => (
-                        <MenuItem key={page} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page}</Typography>
-                        </MenuItem>
+                      <MenuItem key={page} onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center" underline="none">
+                          <Link to={`/${page.toLowerCase()}`}>
+                            {page}
+                          </Link>
+                        </Typography>
+                      </MenuItem>
                     ))}
                   </Menu>
                 </IconButton>
@@ -88,11 +94,14 @@ export default function Navbar(props) {
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: 'black', display: 'block' }}
                   >
-                      {page}
+                      <Typography textAlign="center" underline="none">
+                        <Link to={`/${page.toLowerCase()}`}>
+                          {page}
+                        </Link>
+                      </Typography>
                   </Button>
                 ))}
               </Box>
-
 
             </Container>
           </Toolbar>
