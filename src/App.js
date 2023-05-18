@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import HideOnScroll from './components/Navbar';
+import Navbar from './components/Navbar';
+import Socials from './components/Sidebar';
 
 function App() {
   const title = "Welcome to my page!";
@@ -8,11 +9,13 @@ function App() {
 
   return (
     <div className="App">
+      <Socials />
       <Routes>
-        <Route path="/" element={<HideOnScroll/>} />
+        <Route path="/" element={<Navbar/>} />
       </Routes>
       <h1>{ title }</h1>
       <p>good morning</p>
+      
     </div>
   );
 }
