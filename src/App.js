@@ -1,7 +1,6 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar';
-import Socials from './components/Sidebar';
+import Layout from './components/Layout';
 import Home from './pages/home';
 import About from './pages/about';
 import Projects from './pages/projects';
@@ -9,16 +8,22 @@ import Contact from './pages/contact';
 
 function App() {
   return (
-    <div className="App">
-      <Socials />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<About />} />
-        <Route path="/" element={<Projects />} />
-        <Route path="/" element={<Contact />} />
-      </Routes>
-    </div>
+    <React.Fragment>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="./pages/about" element={<About />} />
+            <Route path="./pages/projects" element={<Projects />} />
+            <Route path="./pages/contact" element={<Contact />} />
+          </Route>
+        </Routes>
+      </Layout>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </React.Fragment>
   );
 }
 

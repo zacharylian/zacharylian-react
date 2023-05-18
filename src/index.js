@@ -20,7 +20,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: '"Raleway", sans-serif, "Courier New", "Courier", "monospace"'
+    fontFamily: '"Raleway", sans-serif, "Courier New", "Courier", "monospace"',
   }
 });
 

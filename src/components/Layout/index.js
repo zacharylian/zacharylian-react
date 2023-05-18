@@ -1,9 +1,14 @@
 import './index.scss';
 import Navbar from '../Navbar';
-
+import Socials from '../Sidebar';
 
 const Layout = () => {
-    return <Navbar/>
+    return (
+        <div>
+            <Navbar />
+            <Socials />
+        </div>
+    )
 }
 
 export default Layout; 
