@@ -26,7 +26,7 @@ const home = () => {
       <div className="homeContent">
         <img src={selfie} alt="selfie" />
         <div className="homeDesc">
-          <h1>Hi! I'm Zach.</h1>
+          <h1>Hi, I'm Zach!</h1>
           <h2>
             <div className="typewriterDesc">
               <Typewriter

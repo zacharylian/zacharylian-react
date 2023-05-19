@@ -1,0 +1,56 @@
+.aboutContent {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 180px;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.aboutContent h1 {
+    margin-left: 70px;
+    font-size: 55px;
+}
+
+.aboutContent .adj {
+    max-width: 600px;
+    margin-left: 150px;
+    font-size: 22px;
+}
+
+.techStackContent {
+    display: flex;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.techStackContent p {
+    align-items: center;
+    margin-left: 16px;
+    max-width: 250px;
+}
+
+.python, .sql, .moreIcons, .tools {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.moreIcons {
+    margin-top: 12px;
+}
+
+.techStackRight {
+    margin-left: 50px;
+}
+
+.tools {
+    display: block;
+    margin-left: 8px;   
+}
+
+.col1, .col2 {
+    margin: 4px 0;
+}

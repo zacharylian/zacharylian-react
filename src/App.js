@@ -7,7 +7,7 @@ import Projects from './pages/projects/projects';
 import Contact from './pages/contact/contact';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
-function App() {
+const App = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true});
   const mainControls = useAnimation();
@@ -23,10 +23,10 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="./pages/about" element={<About />} />
-            <Route path="./pages/projects" element={<Projects />} />
-            <Route path="./pages/contact" element={<Contact />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </Layout>

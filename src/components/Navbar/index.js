@@ -47,7 +47,7 @@ export default function Navbar(props) {
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar color="transparent" position="static" elevation={0}>
-          <Toolbar disableGutters sx = {{maxWidth: 800, mx: "auto" }}>
+          <Toolbar disableGutters sx={{maxWidth: 800, mx: "auto" }}>
             <Container>
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }}}>
                 <IconButton
@@ -82,7 +82,7 @@ export default function Navbar(props) {
                   {pages.map((page) => (
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                       <Typography textAlign="center" underline="none">
-                        <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
+                        <Link to={`../../pages/${page.toLowerCase()}/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
                           {page}
                         </Link>
                       </Typography>
@@ -99,7 +99,7 @@ export default function Navbar(props) {
                   variant="filledTonal"
                 >
                   <Typography textAlign="center" underline="none">
-                    <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
+                    <Link to={`../../pages/${page.toLowerCase()}/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
                       {page}
                     </Link>
                   </Typography>
