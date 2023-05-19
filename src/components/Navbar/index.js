@@ -82,7 +82,9 @@ export default function Navbar(props) {
                   {pages.map((page) => (
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                       <Typography textAlign="center" underline="none">
-                        <Link to={`/${page.toLowerCase()}`}>{page}</Link>
+                        <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
+                          {page}
+                        </Link>
                       </Typography>
                     </MenuItem>
                   ))}
@@ -94,9 +96,12 @@ export default function Navbar(props) {
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "black", display: "block" }}
+                  variant="filledTonal"
                 >
                   <Typography textAlign="center" underline="none">
-                    <Link to={`/${page.toLowerCase()}`}>{page}</Link>
+                    <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
+                      {page}
+                    </Link>
                   </Typography>
                 </Button>
                 ))}

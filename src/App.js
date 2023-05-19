@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/home';
-import About from './pages/about';
-import Projects from './pages/projects';
-import Contact from './pages/contact';
+import Home from './pages/home/home';
+import About from './pages/about/about';
+import Projects from './pages/projects/projects';
+import Contact from './pages/contact/contact';
+import { motion, useInView, useAnimation } from 'framer-motion';
 
 function App() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true});
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
+
   return (
     <React.Fragment>
       <Layout>
@@ -19,10 +30,22 @@ function App() {
           </Route>
         </Routes>
       </Layout>
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <div ref={ref}>
+        <motion.div
+          variants ={{
+            hidden: {opacity: 0, y: 75},
+            visible: {opacity: 1, y: 0}
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{duration: 1, delay: 0.8}}
+        >
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </motion.div>
+      </div>
     </React.Fragment>
   );
 }
