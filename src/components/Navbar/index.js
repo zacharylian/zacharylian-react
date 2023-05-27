@@ -15,7 +15,7 @@ import IconButton from "@mui/material/IconButton";
 
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "About", "Projects", "Contact"];
+const pages = ["Home", "About", "Experience", "Contact"];
 
 export default function Navbar(props) {
 

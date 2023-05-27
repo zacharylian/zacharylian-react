@@ -41,7 +41,7 @@ const home = () => {
           </h2>
 
           <div className="buttons">
-            <Link to="/about" style={{ textDecoration: "none" }}>
+            <Link to="../about/about" style={{ textDecoration: "none" }}>
               <Button className="aboutbtn" variant="text" startIcon={<PersonIcon/>}>
                 About Me
               </Button>

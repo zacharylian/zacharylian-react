@@ -34,7 +34,7 @@ export const Socials = (params) => {
           </li>
         )}
       </ul>
-      <p>Contact Me!</p>
+      <p>~ Socials ~ </p>
     </div>
   );
 };

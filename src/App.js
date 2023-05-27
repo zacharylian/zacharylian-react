@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/home/home';
 import About from './pages/about/about';
-import Projects from './pages/projects/projects';
+import Experience from './pages/experience/experience';
 import Contact from './pages/contact/contact';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
@@ -42,7 +42,7 @@ const App = () => {
         >
           <Home />
           <About />
-          <Projects />
+          <Experience />
           <Contact />
         </motion.div>
       </div>
