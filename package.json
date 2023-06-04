@@ -25,6 +25,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.11.0",
     "react-scripts": "5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.62.1",
     "styled-components": "^5.3.10",
     "typewriter-effect": "^2.19.0",
