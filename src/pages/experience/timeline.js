@@ -31,8 +31,8 @@ const VTimeline = () => {
                         <li>Design, build and configure applications to meet business processes and application requirements</li>
                         <li>Perform unit testing, integrate web components and support deployment activities (React, React Native, Typescript)</li>
                         <li>Build management, design and build enablement (Magnolia-CMS)</li>
-                        <b>Skills: React Native · Typescript · Magnolia-CMS</b> 
                     </ul>
+                    <b>Skills: React Native · Typescript · Magnolia-CMS</b> 
                 </p>
             </VerticalTimelineElement>
 
@@ -49,8 +49,8 @@ const VTimeline = () => {
                     Information Systems Undergraduate Majoring in Business Analytics and Digitalisation & Cloud Solutions
                 </h4>
                 <p>
+                    <b>Leadership and Co-Curricular Activities:</b>
                     <ul>
-                        <b>Leadership and Co-Curricular Activities:</b>
                         <li>SMU Business Intelligence & Analytics: Data Associate (AY2022-Present)</li>
                         <li>SMU .HACK: Member (AY2022-Present)</li>
                         <li>SMUAI: Member (AY2021-Present)</li>
@@ -59,8 +59,9 @@ const VTimeline = () => {
                         <li>Uni-Y (Y-Craft It!): Volunteer (AY2021-22)</li>
                         <li>SMU Caretalyst (Project Illuminate): Volunteer (AY2022)</li>
                         <li>Handball: Member (AY2021-22)</li>
-                        <br/>
-                        <b>Competitions & Achievements</b>
+                    </ul>
+                    <b>Competitions & Achievements</b>
+                    <ul>
                         <li>Code for Cities Hackathon: Top 10 (AY2022)</li>
                         <li>Ellipsis Tech Series Hackathon: Top 30 (AY2022)</li>
                         <li>Shopee Product & Design Challenge (AY2022)</li>
@@ -84,8 +85,8 @@ const VTimeline = () => {
                     <ul>
                         <li>Collaborated with cross-functional teams, including product marketing, to gather leads in the Finance industry and develop integrated marketing campaigns</li>
                         <li>Responsible for data cleaning and pre-processing of our clients' data to identify the appropriate marketing approach to use and ensure our client’s buy-in for our services (Tableau, Excel)</li>
-                        <b>Skills: Pivot Tables · Data Aggregation · Microsoft Excel </b> 
                     </ul>
+                    <b>Skills: Pivot Tables · Data Aggregation · Microsoft Excel </b> 
                 </p>
             </VerticalTimelineElement>
 
@@ -124,12 +125,13 @@ const VTimeline = () => {
                     "A" Levels
                 </h4>
                 <p>
+                    <b>Leadership and Co-Curricular Activities:</b>
                     <ul>
-                        <b>Leadership and Co-Curricular Activities:</b>
                         <li>Class General Paper Representative</li>
                         <li>Softball: Outfielder</li>
-                        <br/>
-                        <b>Competitions & Achievements</b>
+                    </ul>
+                    <b>Competitions & Achievements</b>
+                    <ul>
                         <li>Edusave Most Improved Award (2018)</li>
                     </ul>
                 </p>
@@ -138,6 +140,7 @@ const VTimeline = () => {
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
                 date="2013 - 2017"
+                dateClassName='dateClass'
                 iconStyle={{ background: '#F3DEBA', color: '#fff' }}
                 icon={<img className="hwachong" src={hwachong} alt="hwachong" />}
             >
@@ -148,11 +151,12 @@ const VTimeline = () => {
                     "O" Levels
                 </h4>
                 <p>
+                    <b>Leadership and Co-Curricular Activities:</b>
                     <ul>
-                        <b>Leadership and Co-Curricular Activities:</b>
                         <li>Senior Staff Sergeant and Deputy Platoon Commander at St. John's Brigade Singapore</li>
-                        <br/>
-                        <b>Competitions & Achievements</b>
+                    </ul>
+                    <b>Competitions & Achievements</b>
+                    <ul>
                         <li>HCI Good Progress Award (2016)</li>
                     </ul>
                 </p>

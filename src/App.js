@@ -41,9 +41,13 @@ const App = () => {
           transition={{duration: 1, delay: 0.8}}
         >
           <Home />
+          <hr/>
           <About />
+          <hr/>
           <Experience />
+          <hr/>
           <Contact />
+          <hr/>
         </motion.div>
       </div>
     </React.Fragment>
