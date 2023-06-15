@@ -13,7 +13,7 @@ import Grid from '@mui/material/Grid';
 const projects = () => {
   const projs = projList.map((proj, index) => (
     <Grid item xs={12} sm={6} md={4} key={index}> 
-      <Card sx={{ maxWidth: 390 }}>
+      <Card sx={{ maxWidth: 390, borderRadius: "5%" }}>
           <CardMedia
             component="img"
             alt={proj.name}

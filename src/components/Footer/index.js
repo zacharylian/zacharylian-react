@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footerText'>
-        <h5>© Built by Zachary</h5>
+        <h5>© Built by Zachary 2023</h5>
       </div>
       <div className='footerIcons'>
           <div className='footerLinkedIn'>
