@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout';
+import Navbar from './components/Navbar';
+import Socials from './components/Sidebar';
+import Footer from './components/Footer';
 import Home from './pages/home/home';
 import About from './pages/about/about';
 import Experience from './pages/experience/experience';
@@ -20,16 +22,15 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
-        </Routes>
-      </Layout>
+      <Navbar />
+      <Routes>
+        <Route path="./home" element={<Home />}>
+        <Route path="./about" element={<About />} />
+        <Route path="./experience" element={<Experience />} />
+        <Route path="./contact" element={<Contact />} />
+        </Route>
+      </Routes>
+      <Socials />
       <div ref={ref}>
         <motion.div
           variants ={{
@@ -47,10 +48,10 @@ const App = () => {
           <Experience />
           <hr/>
           <Contact />
-          <hr/>
         </motion.div>
       </div>
-    </React.Fragment>
+      <Footer />
+    </React.Fragment> 
   );
 }
 
