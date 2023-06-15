@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { IoSend } from "react-icons/io5";
 import { Typography } from '@mui/material';
 
 const contact = () => {
@@ -71,8 +70,8 @@ const contact = () => {
         />
       </div>
       <div align="center">
-        <Button type="submit" variant="contained" color="secondary" endIcon={<IoSend />} sx={{marginTop: '10px'}}>
-          <Typography sx={{fontWeight: 'bold'}}>
+        <Button type="submit" variant="contained" color="secondary" sx={{marginTop: '10px'}}>
+          <Typography sx={{fontWeight: 'bold', color: "#F3DEBA"}}>
             Send
           </Typography>  
         </Button>    
