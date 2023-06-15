@@ -8,6 +8,7 @@ const experience = () => {
     <div className='experience'>
       <h1>Projects</h1>
       <Projects />
+      <hr />
       <h1>Timeline</h1>
       <VTimeline />
     </div>

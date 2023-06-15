@@ -13,7 +13,7 @@ import Grid from '@mui/material/Grid';
 const projects = () => {
   const projs = projList.map((proj, index) => (
     <Grid item xs={12} sm={6} md={4} key={index}> 
-      <Card sx={{ maxWidth: 327 }}>
+      <Card sx={{ maxWidth: 390 }}>
           <CardMedia
             component="img"
             alt={proj.name}
@@ -21,11 +21,11 @@ const projects = () => {
             image={proj.image}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5">
+            <Typography gutterBottom variant="h5" color="text.secondary" fontWeight={"bold"}>
               {proj.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {proj.description}
+            <Typography variant="h6" color="text.secondary">
+              {proj.subtitle}
             </Typography>
           </CardContent>
           <CardActions>
@@ -35,7 +35,7 @@ const projects = () => {
     </Grid>
   ));
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} sx={{maxWidth: 1308, marginX: '50px', alignContent: 'center'}}>
       {projs}
     </Grid>
   )

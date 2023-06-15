@@ -27,6 +27,15 @@ const projList = [
         "skills": "VueJS, Leaflet.JS, Flask, MySQL, Postman"
     },
     {
+        "name": "DBTT",
+        "title": "IS215 Digital Business Technologies and Transformation Project: FooDeTech",
+        "date": "Jan 2023 to Apr 2023",
+        "image": "",
+        "subtitle": "asdf",
+        "description": "Spoiling Rate Prediction: We have used a variety of regression methods to make predictions on when food spoils. We will be accessing this by factoring in external factors such as surrounding temperature and humidity, and analysing which of these factors listed contribute to spoiling rate of certain foods. This is to determine when restaurant owners should advise and alert their staff to store their food before the food spoils. ",
+        "skills": "EDA, Pandas, Matplotlib, Seaborn, Sci-kit Learn, Linear Regression, Random Forest, XGBoost, YOLOv5"
+    },
+    {
         "name": "DAP",
         "title": "BIA Data Associate Program: Aspect Based Sentiment Analysis Project (ABSA)",
         "date": "Dec 2022 to May 2023",
