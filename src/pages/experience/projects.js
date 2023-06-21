@@ -1,6 +1,12 @@
 import React from 'react'
 import './projects.scss'
 import projList from './projects/projectList'
+import esd from '../../assets/esd.jpeg'
+import wad2 from '../../assets/wad2.jpeg'
+import heap1 from '../../assets/heap.png'
+import dbtt from '../../assets/dbtt.jpeg'
+import dap from '../../assets/dap.jpeg'
+import ai200 from '../../assets/ai200.png'
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -18,14 +24,24 @@ import ReactPlayer from 'react-player';
 const Projects = () => {
   const [open, setOpen] = React.useState(-1);
 
+  const images = {
+    "esd": esd,
+    "wad2": wad2,
+    "heap": heap1,
+    "dbtt": dbtt,
+    "dap": dap,
+    "ai200": ai200,
+  }
+
   const projs = projList.map((proj, index) => (
     <Grid item xs={12} sm={6} md={4} key={index} > 
       <Card sx={{ borderRadius: "5%", padding: "10px" , margin: 1}}>
           <CardMedia
+            className={proj.name}
             component="img"
             alt={proj.name}
-            height="140"
-            image={proj.image1}
+            height="250"
+            image={images[proj.name]}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" color="text.secondary" fontWeight={"bold"}>

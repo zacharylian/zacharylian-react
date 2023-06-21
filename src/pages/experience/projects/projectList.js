@@ -1,9 +1,9 @@
 const projList = [
     {
-        "name": "ESD",
+        "name": "esd",
         "title": "IS213 Enterprise Solution Development Project: ESDeezKnee",
         "date": "Jan 2023 to Apr 2023",
-        "image1": "",
+        "image1": "/src/assets/esd.jpeg",
         "image2": "",
         "video": "https://youtu.be/Hvxrg_qIf7g",
         "link": "https://github.com/ESDeezknee/ESDeezknee",
@@ -13,10 +13,10 @@ const projList = [
         "skills": "Flask, Docker, MySQL, Postman, RabbitMQ, NotificationsAPI"
     },
     {
-        "name": "WAD2",
+        "name": "wad2",
         "title": "IS216 Web Application Development II Project: Concord",
         "date": "Aug 2022 to Dec 2022",
-        "image1": "",
+        "image1": "/src/assets/wad2.jpeg",
         "image2": "",
         "video": "",
         "link": "https://github.com/zacharylian/IS216G6T1",
@@ -26,10 +26,10 @@ const projList = [
         "skills": "VueJS, SCSS, ChartJS, D3.js, Firebase(JSON), SweetAlert2"
     },
     {
-        "name": "HEAP",
+        "name": "heap",
         "title": ".Hack Enrichment Application Program (HEAP): HeresOurPlan",
         "date": "May 2022 to Aug 2022",
-        "image1": "",
+        "image1": "/src/assets/heap.png",
         "image2": "",
         "video": "https://youtu.be/pEVdiWy-Gek",
         "link": "https://github.com/HeresOurPlan",
@@ -39,10 +39,10 @@ const projList = [
         "skills": "VueJS, Leaflet.JS, Flask, MySQL, Postman"
     },
     {
-        "name": "DBTT",
+        "name": "dbtt",
         "title": "IS215 Digital Business Technologies and Transformation Project: FooDeTech",
         "date": "Jan 2023 to Apr 2023",
-        "image1": "",
+        "image1": "/src/assets/dbtt.jpeg",
         "image2": "",
         "video": "https://youtu.be/GeUQV8IKvLQ",
         "link": "https://github.com/zacharylian/dbtt",
@@ -52,10 +52,10 @@ const projList = [
         "skills": "EDA, Pandas, Matplotlib, Seaborn, hvplot, Sci-kit Learn, Linear Regression, Random Forest, XGBoost, YOLOv5"
     },
     {
-        "name": "DAP",
+        "name": "dap",
         "title": "BIA Data Associate Program: Aspect Based Sentiment Analysis Project (ABSA)",
         "date": "Dec 2022 to May 2023",
-        "image1": "",
+        "image1": "/src/assets/dap.jpeg",
         "image2": "",
         "video": "",
         "link": "https://github.com/zacharylian/bi-pain",
@@ -65,10 +65,10 @@ const projList = [
         "skills": "Sci-kit Learn, Pandas, Matplotlib, Seaborn, Jupyter, SpaCy, TextBlob, NLTK, BERT, RoBERTa"
     },
     {
-        "name": "AI200",
+        "name": "ai200",
         "title": "AI200: Applied Machine Learning Capstone Project",
         "date": "Dec 2021",
-        "image1": "../../../assets/ai200cert.png",
+        "image1": "/src/assets/ai200.png",
         "image2": "",
         "video": "",
         "link": "",

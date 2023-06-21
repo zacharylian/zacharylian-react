@@ -18,7 +18,7 @@ const VTimeline = () => {
                 className="vertical-timeline-element--work"
                 date="May 2023 - Aug 2023"
                 iconStyle={{ background: '#F3DEBA', color: '#fff' }}
-                icon={<img className="accenture" src={accenture} alt="f5" />}
+                icon={<img className="accenture" src={accenture} alt="accenture" />}
             >
                 <h3 className='vertical-timeline-element-title'>
                     App Developer Intern
@@ -32,7 +32,7 @@ const VTimeline = () => {
                         <li>Perform unit testing, integrate web components and support deployment activities (React, React Native, Typescript)</li>
                         <li>Build management, design and build enablement (Magnolia-CMS)</li>
                     </ul>
-                    <b>Skills: React Native · Typescript · Magnolia-CMS</b> 
+                    <b>Skills: React Native · Typescript · Reduxjs · Jira · Git · Magnolia-CMS</b> 
                 </p>
             </VerticalTimelineElement>
 

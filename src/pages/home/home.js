@@ -42,12 +42,12 @@ const home = () => {
 
           <div className="buttons">
             <Link to="../about/about" style={{ textDecoration: "none" }}>
-              <Button className="aboutbtn" variant="text" startIcon={<PersonIcon/>}>
+              <Button className="aboutbtn" variant="body" startIcon={<PersonIcon/>}>
                 About Me
               </Button>
             </Link>
 
-            <Button className="resumebtn" onClick={() => {downloadFile(urlFile)}} variant="text" startIcon={<SaveAltIcon/>}>
+            <Button className="resumebtn" onClick={() => {downloadFile(urlFile)}} variant="body" startIcon={<SaveAltIcon/>}>
               Resume
             </Button>
           </div>
