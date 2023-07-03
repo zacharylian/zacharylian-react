@@ -2,11 +2,14 @@
 
 ## Learning
 ### Objectives:
+#### June
 * Learn the fundamentals of Reactjs and integrate with MaterialUI and Framer
-* Deploy the web application on Netlify
-* Learn the fundamentals of Java and integrate with NLP
+* Deploy the web application on Vercel
+* Learn the fundamentals of git commands
+#### July
+* Learn the fundamentals of Java 
+* Fork an NLP project that is coded in Java and integrate it within the application
 * Merge both frontend and backend to create one seamless web application
-* (Optional) Learn the fundamentals of git commands
 
 ### `npm start`
 
