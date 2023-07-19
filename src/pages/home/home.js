@@ -40,6 +40,13 @@ const home = () => {
             </div>
           </h2>
 
+          <p>
+            <div className="miniDesc">
+                App Developer Intern @ Accenture <br/>
+                Year 3 Information Systems Undergraduate @ SMU <br/>
+            </div>
+          </p>
+
           <div className="buttons">
             <Link to="../about/about" style={{ textDecoration: "none" }}>
               <Button className="aboutbtn" variant="body" startIcon={<PersonIcon/>}>

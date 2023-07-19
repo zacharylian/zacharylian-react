@@ -112,7 +112,7 @@ const Projects = () => {
   ));
 
   return (
-    <Grid container spacing={2} sx={{maxWidth: 1308, marginX: '50px', alignContent: 'center'}}>
+    <Grid container spacing={2} sx={{maxWidth: {xs: "367px", md: "1308px"}, marginX: '50px', alignContent: 'center'}}>
       {projs}
     </Grid>
   )

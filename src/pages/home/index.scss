@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     width: 100%;
+    padding-bottom: 150px;
 }
 
 .homeContent img {
@@ -31,6 +32,11 @@
     font-weight: 400;
     margin-top: -25px;
     margin-left: 5px;
+}
+
+.miniDesc {
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .buttons button {

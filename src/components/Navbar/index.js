@@ -46,8 +46,8 @@ export default function Navbar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar color="transparent" position="static" elevation={0}>
-          <Toolbar disableGutters sx={{maxWidth: 800, mx: "auto" }}>
+        <AppBar color="transparent" elevation={0} position="relative">
+          <Toolbar disableGutters sx={{maxWidth: {xs: "367px", md: "1440px"} }}>
             <Container>
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }}}>
                 <IconButton
@@ -65,18 +65,18 @@ export default function Navbar(props) {
                   anchorEl={anchorElNav}
                   anchorOrigin={{
                     vertical: "bottom",
-                    horizontal: "left",
+                    horizontal: "center",
                   }}
                   keepMounted
                   transformOrigin={{
                     vertical: "top",
-                    horizontal: "left",
+                    horizontal: "center",
                   }}
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
                   sx={{
                     flexGrow: 1,
-                    display: { xs: "block", md: "none" },
+                    display: { xs: "flex", md: "none" },
                   }}
                 >
                   {pages.map((page) => (
@@ -90,15 +90,16 @@ export default function Navbar(props) {
                   ))}
                 </Menu>
               </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
+
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, width: "-webkit-fill-available"}}>
                 {pages.map((page) => (
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", display: "block" }}
+                  sx={{ my: 2, color: "black", mx: "auto"}}
                   variant="filledTonal"
                 >
-                  <Typography textAlign="center" underline="none">
+                  <Typography underline="none">
                     <Link to={`../../pages/${page.toLowerCase()}/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
                       {page}
                     </Link>

@@ -1,8 +1,6 @@
 .aboutContent {
     display: flex;
     position: relative;
-    width: 100%;
-    max-width: 1200px;
     margin: 0 180px;
     align-items: center;
 }
@@ -13,14 +11,13 @@
 }
 
 .aboutContent .adj {
-    max-width: 600px;
     margin-left: 150px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .techStackContent {
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 8px;
 }
 
