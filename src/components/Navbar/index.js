@@ -91,20 +91,19 @@ export default function Navbar(props) {
                 </Menu>
               </Box>
 
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, width: "-webkit-fill-available"}}>
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, width: "-webkit-fill-available", justifyContent: "space-evenly"}}>
                 {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", mx: "auto"}}
-                  variant="filledTonal"
-                >
-                  <Typography underline="none">
-                    <Link to={`../../pages/${page.toLowerCase()}/${page.toLowerCase()}`} style={{ textDecoration: "none" }}>
-                      {page}
-                    </Link>
-                  </Typography>
-                </Button>
+                  <Button
+                    key={page}
+                    href={`../../pages/${page.toLowerCase()}`}
+                    onClick={`../../pages/${page.toLowerCase()}`}
+                    sx={{ my: 2, color: "black"}}
+                    variant="filledTonal"
+                  >
+                    <Typography underline="none">
+                        {page}
+                    </Typography>
+                  </Button>
                 ))}
               </Box>
             </Container>

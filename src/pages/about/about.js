@@ -13,9 +13,9 @@ const about = () => {
       <div className="aboutContent">
         <h1>About Me</h1>
         <div className="adj">
-          I am a Year 2 <b>Information Systems</b> undergraduate majoring in Business Analytics and Digitalisation & Cloud Solutions at <b>Singapore Management University (SMU)</b>. I am an <b>adaptable</b> team player who is able to work <b>independently</b> and in a <b>fast-paced</b> environment. 
+          I am a Year 3 <b>Information Systems</b> undergraduate majoring in Business Analytics and Digitalisation & Cloud Solutions at <b>Singapore Management University (SMU)</b>. I am an <b>adaptable</b> team player who is able to work <b>independently</b> and in a <b>fast-paced</b> environment. 
           <br/>
-          I am passionate about <b>data science and analytics</b>, and I am always looking for opportunities to learn and grow. During my free time, I love editing videos and eating good food! 
+          I am passionate about <b>Frontend Development and Product</b>, and I am always looking for opportunities to learn and grow. During my free time, I love watching F1 and eating good food! 
           <div className="techStackContent">
             <div className="techStackLeft">
               <h2>Technologies</h2>

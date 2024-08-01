@@ -14,7 +14,7 @@ const urlFile = "../../assets/resume.pdf"
 const downloadFile = (url) => {
   const aTag = document.createElement('a');
   aTag.href = url;
-  aTag.setAttribute('download', 'resume.pdf');
+  aTag.setAttribute('download', 'resume_summer_2024.pdf');
   document.body.appendChild(aTag);
   aTag.click();
   aTag.remove();
@@ -42,7 +42,7 @@ const home = () => {
 
           <p>
             <div className="miniDesc">
-                App Developer Intern @ Accenture <br/>
+                Full Stack Engineer (Product) Intern @ OCBC <br/>
                 Year 3 Information Systems Undergraduate @ SMU <br/>
             </div>
           </p>
